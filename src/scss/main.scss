@@ -1,0 +1,21 @@
+@import '/node_modules/swiper/css/swiper.min.css';
+
+@import '../blocks/variables.scss';
+@import './styles.scss';
+
+/* Preloader */
+@import '../blocks/preloader/preloader.scss';
+/* Header */
+@import '../blocks/header-text-block/header-text-block.scss';
+/* Menu */
+@import '../blocks/header-menu/header-menu.scss';
+/* Portfolio */
+@import '../blocks/portfolio/portfolio.scss';
+/* Services */
+@import '../blocks/services/services.scss';
+/* Contacts */
+@import '../blocks/contact/contact.scss';
+/* Footer */
+@import '../blocks/footer/footer.scss';
+
+@import '../blocks/popups/popup.scss';

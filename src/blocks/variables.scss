@@ -1,0 +1,251 @@
+// COLORS -->
+$colorText: #080705;
+$colorTextSecond: #67564C;
+$colorErrore: #8a1d0a;
+
+$colorMenuItem: #4F423A;
+$colorMenuItemHover: #161311;
+
+$colorHeaderText: #363634;
+$colorBackHeader: #D9C5BC;
+
+$colorBackPortfolioBlock: #ffffff;
+
+$colorBackServicesBlock: #F3F2EE;
+
+$colorBackBtnViewAllWorks: #060606;
+$colorBtnViewAllWorks: #CCCCCC;
+$colorBorderBtnViewAllWorks: #555555;
+// <-- COLORS
+
+// FONTS -->
+$fontMenu: 'Oswald', sans-serif;
+$fontGeneral: 'Roboto Condensed', sans-serif;
+
+.popup__container {
+    font-family: $fontMenu; 
+    background-color: rgba($color: $colorBackHeader, $alpha: .9);
+
+    .popup__btn-close {
+        background-color: $colorText;
+        color: $colorBackHeader;
+        border: 2px solid $colorText;
+        
+        &:hover {
+            color: $colorText;
+            background-color: $colorBackHeader;
+        }
+    }
+}
+
+table {
+    tr {
+        background-color: $colorMenuItemHover;
+        color: $colorBackHeader;
+
+        &:nth-child(even) {
+            color: $colorMenuItemHover;
+            background-color: $colorBackHeader;
+        }
+    }
+}
+
+.contact-form--in-popup {
+
+
+    .contact-form__field {
+        color: $colorText;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+    }
+}
+
+.contact-form--in-popup {
+    .contact-form__errore-textfield {
+        color: $colorErrore;
+    }
+}
+
+.message-success {
+    font-family: $fontMenu; 
+    background-color: $colorBackHeader;
+    color: $colorText;
+
+    a {
+        color: $colorTextSecond;
+
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+// HEADER MENU
+.header-menu {
+    font-family: $fontMenu;
+
+    a {
+        color: $colorMenuItem;
+
+        &:hover {
+            color: $colorText;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .header-menu {
+        background-color: $colorBackHeader;
+    }
+}
+
+// PRELOADER
+.preloader {
+    background-color: $colorBackHeader;
+
+    .preloader__title {
+        color: $colorHeaderText;
+        font-family: 'sans-serif';
+    }
+
+    .preloader__descr {
+        font-family: 'sans-serif';
+        color: $colorTextSecond;
+    }
+}
+
+// HEADER TEXT
+.header-text-block {
+    .header-text__namesite {
+        color: $colorHeaderText;
+        font-family: $fontGeneral;
+    }
+
+    .header-text__typesite {
+        font-family: $fontMenu;
+        color: $colorTextSecond;
+    }
+
+    .header-text__comment {
+        color: $colorHeaderText;
+        font-family: $fontMenu;
+    }
+
+    .header-text__text {
+        font-family: $fontGeneral;
+        color: $colorHeaderText;
+    }
+}
+
+// PORTFOLIO
+.portfolio-block {
+    background-color: $colorBackPortfolioBlock;
+
+    .portfolio__item {
+        border: 2px solid $colorBackHeader;
+    
+        .portfolio__item-cover {
+            background-color: $colorBackHeader;
+
+            .portfolio__item-block-text {
+                color: $colorMenuItem;
+            }
+
+            .portfolio__item-title {
+                font-family: $fontMenu;
+            }
+
+            .portfolio__item-description {
+                font-family: $fontGeneral;
+            }
+        }
+    }
+
+
+}
+
+// SERVICES
+.services-block {
+    background-color: $colorBackServicesBlock;
+    &--back-image {
+
+        &::after {
+            background-color: $colorBackHeader;
+        }
+    }
+
+    .comment-block {
+        
+        .comment-block__image {
+
+            .comment-img-cover {
+                background-color: $colorBackServicesBlock;
+            }
+        }
+
+        .comments-wrapper {
+
+            .comments__comment {
+                font-family: $fontGeneral;
+            }
+
+            .comment-block__buttons {
+
+                .btn-prev, .btn-next {
+                    font-family: $fontMenu;
+                    color: $colorTextSecond;
+
+                    &:hover {
+                        color: $colorText;
+                    }
+                }
+            }
+        }
+    }
+
+    .our-services-block {
+        font-family: $fontGeneral;
+        color: darken($colorTextSecond, 15);
+
+        .our-services__title {
+            margin-bottom: 15px;
+            
+        }
+
+        .our-services__list {
+            border-left: 2px solid $colorBackHeader;
+        }
+    }
+}
+
+// CONTACTS
+.contact-block-container {
+    background-color: $colorBackPortfolioBlock;
+
+    .contact-img-cover {
+        background-color: $colorBackPortfolioBlock;
+    }
+
+    .contact__text-block {
+        font-family: $fontGeneral;
+        color: $colorTextSecond;
+
+        .contact__text-title {
+            color: $colorText;
+        }
+    }
+
+    .btn-contact-container {
+        border-top: 2px solid $colorBackHeader;
+    }
+}
+
+// FOOTER
+.footer-block {
+    color: $colorText;
+    font-family: $fontGeneral;
+    color: $colorTextSecond;
+
+    a {
+        color: $colorTextSecond;
+    }
+}

@@ -1,0 +1,12 @@
+include mixin-portfolio
+
+section.portfolio-block#id-portfolio-block
+    .inner-max-width-container
+        +itemPortfolio('./images/portfolio/item-1.jpg', './images/portfolio/small/item-1.jpg', 'Foto and camera')
+        +itemPortfolio('./images/portfolio/item-2.jpg', './images/portfolio/small/item-2.jpg', 'Flowers', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, iusto!')
+        +itemPortfolio('./images/portfolio/item-3.jpg', './images/portfolio/small/item-3.jpg', 'Montains')
+        +itemPortfolio('./images/portfolio/item-4.jpg', './images/portfolio/small/item-4.jpg', 'American cars', 'Voluptate, iusto!')
+
+        .portfolio__btn-view-all-works-container
+            a(href="portfolio.html").button-simple#btn-all-works View all works
+            

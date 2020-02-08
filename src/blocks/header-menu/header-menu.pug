@@ -1,0 +1,25 @@
+mixin linkMenu(title, parTargetId, parSubMenu)
+    li.header-menu__link(class={
+        "header-menu__parent-sub-menu":parSubMenu
+    })
+        a.menu-item-link(href="#" id= parTargetId)= title
+            if(parSubMenu)
+                ul.sub-menu
+                    li.sub-menu-item 
+                        a(href="#") Link one and main
+                    li.sub-menu-item
+                        a(href="#") Link 2
+                    li.sub-menu-item
+                        a(href="#") Link 3
+                    li.sub-menu-item
+                        a(href="#") Link 4
+
+button.btn-show-menu#btn-show-menu Menu
+    //- span.btn-show-menu__line--top
+    span.btn-show-menu__line
+    //- span.btn-show-menu__line--bottom
+ul.header-menu#id-header-menu
+    +linkMenu('ABOUT', 'item-menu__header')
+    +linkMenu('PORTFOLIO', 'item-menu__id-portfolio-block')
+    +linkMenu('SERVICES', 'item-menu__id-services-block')
+    +linkMenu('CONTACT', 'item-menu__id-contact-block')

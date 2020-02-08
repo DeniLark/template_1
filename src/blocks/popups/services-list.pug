@@ -1,0 +1,16 @@
+include ../services/mixin-services
+
+
+div#popup-services.popup--services.popup__container(tabindex="0")
+    button.button.popup__btn-close X
+    .popup.popup--vertical-center
+        .popup__content.inner-max-width-container
+            .table-services__container
+                table
+                    tbody
+                        +viewHiddenService('Lorem', '5000')
+                        +viewHiddenService('Ipsum', '1500')
+                        +viewHiddenService('Dolor', '1000')
+                        +viewHiddenService('Sit Amet', '500')
+                        +viewHiddenService('Consectetur adipisicing', '10000')
+                        +viewHiddenService('Elit', '2500')

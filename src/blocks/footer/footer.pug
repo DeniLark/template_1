@@ -1,0 +1,14 @@
+mixin socialLink(parLink, parText, parTitle)
+    - parTitle = parText
+    span.contacts__link-social
+        a(href="http://" + parLink, target="_blank", rel="noopener noreferrer" title="" + parTitle)= parText
+
+.footer-block
+    .footer__contacts
+        p.contacts__link-social.contacts__link-social--email
+            a(href="mailto:" + emailSite)= emailSite
+        p 
+            +socialLink('instagram.com', 'Instagram')
+            +socialLink('facebook.com', 'Facebook')
+            +socialLink('pinterest.com', 'pinterest')
+    .footer__copyright= textCopyright

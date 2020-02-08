@@ -1,0 +1,53 @@
+- var nameSite = 'Fisher Kerluke' 
+- var typeSite = 'Design studio'
+- var emailSite = 'designstudio@email.com'
+- var textCopyright = nameSite + ' ' + typeSite + ' - \u00A9 2019' 
+
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title= nameSite
+
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed&display=swap" rel="stylesheet">
+        link(rel="stylesheet", href="./css/main.min.css")
+    body
+        include blocks/preloader/preloader
+        header.header
+            .header__background-container#header
+                .header__background.header__background--back-image.background-back-image--about
+            .header-menu-container#id-static-menu
+                .header-menu-wraper
+                    .inner-max-width-container
+                        .header-menu.header-menu--btn-back
+                            a.menu-btn-back(href="./index.html" title="На главную") <
+            section.header-text-block-container
+                include blocks/header-text-block/header-text-block
+        main.main#main
+            include blocks/portfolio/mixin-portfolio
+            section.portfolio-block#id-portfolio-block
+                .inner-max-width-container
+                    +itemPortfolio('./images/portfolio/item-1.jpg', './images/portfolio/small/item-1.jpg', 'Foto and camera')
+                    +itemPortfolio('./images/portfolio/item-2.jpg', './images/portfolio/small/item-2.jpg', 'Flowers', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, iusto!')
+                    +itemPortfolio('./images/portfolio/item-3.jpg', './images/portfolio/small/item-3.jpg', 'Montains')
+                    +itemPortfolio('./images/portfolio/item-4.jpg', './images/portfolio/small/item-4.jpg', 'American cars', 'Voluptate, iusto!')
+                    +itemPortfolio('./images/portfolio/item-1.jpg', './images/portfolio/small/item-1.jpg', 'Foto and camera')
+                    +itemPortfolio('./images/portfolio/item-2.jpg', './images/portfolio/small/item-2.jpg', 'Flowers', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, iusto!')
+                    +itemPortfolio('./images/portfolio/item-3.jpg', './images/portfolio/small/item-3.jpg', 'Montains')
+                    +itemPortfolio('./images/portfolio/item-4.jpg', './images/portfolio/small/item-4.jpg', 'American cars', 'Voluptate, iusto!')
+                    +itemPortfolio('./images/portfolio/item-1.jpg', './images/portfolio/small/item-1.jpg', 'Foto and camera')
+                    +itemPortfolio('./images/portfolio/item-2.jpg', './images/portfolio/small/item-2.jpg', 'Flowers', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, iusto!')
+                    +itemPortfolio('./images/portfolio/item-3.jpg', './images/portfolio/small/item-3.jpg', 'Montains')
+                    +itemPortfolio('./images/portfolio/item-4.jpg', './images/portfolio/small/item-4.jpg', 'American cars', 'Voluptate, iusto!')
+                    +itemPortfolio('./images/portfolio/item-1.jpg', './images/portfolio/small/item-1.jpg', 'Foto and camera')
+                    +itemPortfolio('./images/portfolio/item-2.jpg', './images/portfolio/small/item-2.jpg', 'Flowers', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, iusto!')
+                    +itemPortfolio('./images/portfolio/item-3.jpg', './images/portfolio/small/item-3.jpg', 'Montains')
+                    +itemPortfolio('./images/portfolio/item-4.jpg', './images/portfolio/small/item-4.jpg', 'American cars', 'Voluptate, iusto!')
+            
+        footer.footer
+            .inner-max-width-container
+                include blocks/footer/footer
+
+        script(src="./js/app.min.js")

@@ -1,0 +1,17 @@
+mixin viewComment(parText, parAuthor)
+    .swiper-slide
+        .comment-block__text
+            p= '"' + parText + '"'
+        .comment-block__author
+            p= parAuthor
+
+mixin viewHiddenService(parTitle, parPrice)
+    //- .service__item
+    //-     span.service__title= parTitle
+    //-     span.service__price= parPrice
+    //-         <span>$</span>
+
+    tr
+        td= parTitle
+        td= parPrice
+            <span>$</span>

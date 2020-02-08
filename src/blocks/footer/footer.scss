@@ -1,0 +1,64 @@
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+    font-size: 14px;
+
+    .footer__contacts {
+
+        .contacts__link-social {
+            padding: 0 10px;
+            position: relative;
+            text-transform: capitalize;
+
+            &--email {
+                text-transform: lowercase;
+                margin-bottom: 7px;
+            }
+
+            &:after {
+                content: '.';
+                position: absolute;
+                left: 0;
+                bottom: 20%;
+                font-size: 18px;
+            }
+
+            &:first-of-type {
+                padding-left: 0;
+
+                &:after {
+                    content: '';
+                }
+            }
+
+            &:last-of-type {
+                padding-right: 0;
+            }
+
+            a {
+                text-decoration: none;
+                transition: color 0.5s ease-in;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-block {
+        display: block;
+        text-align: center;
+
+        .footer__contacts {
+            margin-bottom: 15px;
+        }
+    }
+}
+    

@@ -1,0 +1,16 @@
+div#popup-feedback.popup--feedback.popup__container(tabindex="0")
+    button.button.popup__btn-close X
+    .popup.popup--vertical-center
+        .popup__content.inner-max-width-container
+            form.contact-form.contact-form--in-popup(action="/" method="get")
+                input.contact-form__name.contact-form__field#input-name(type="text" name="name" placeholder="Your name")
+                .hidden.contact-form__errore-textfield#errore-name "name" field cannot be empty
+                
+                input.contact-form__e-mail.contact-form__field#input-e-mail(type="e-mail" name="e-mail" placeholder="Your e-mail")
+                .hidden.contact-form__errore-textfield#errore-emailempty "e-mail" field cannot be empty
+                .hidden.contact-form__errore-textfield#errore-email incorrect e-mail
+                
+                textarea.contact-form__message.contact-form__field#input-message(name="message" placeholder="Your message")
+                .hidden.contact-form__errore-textfield#errore-message "message" field cannot be empty
+                
+                input.contact-form__submit.button-simple#btn-submit-form-contact(type="submit" value="submit")

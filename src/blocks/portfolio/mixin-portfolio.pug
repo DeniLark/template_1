@@ -1,0 +1,10 @@
+mixin itemPortfolio(urlBigImg, urlImg, title, shortDescription)
+    a.portfolio__item-link(href="" + urlBigImg)
+        .portfolio__item.scroll-element
+            //img size = 437 246
+            img(src="" + urlImg, alt="")
+            .portfolio__item-cover
+                .portfolio__item-block-text
+                    .portfolio__item-title= title
+                    if(shortDescription)
+                        .portfolio__item-description= shortDescription

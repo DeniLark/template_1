@@ -1,0 +1,124 @@
+.popup__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.popup {
+    padding: 50px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+
+    &__btn-close {
+        position: fixed;
+        right: 5px;
+        top: 5px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__content {
+        text-align: center;
+    }
+
+    &__header, &__footer {
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__main {
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+        position: relative;
+
+        img {
+            height: 100%;
+            width: auto;
+            transition: all 0.5s ease-in-out; 
+
+            &.image--clickable {
+                cursor: pointer;
+            }
+
+            &.image-big {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+
+    .portfolio-block {
+        padding: 20px;
+    }
+
+    &--image {
+        padding: 0;
+    }
+
+    &--vertical-center {
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
+.table-services__container {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contact-form--in-popup {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+
+    .contact-form__submit, .contact-form__field {
+        margin-top: 15px;
+    }
+    .contact-form__field {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        font-family: inherit;
+        font-size: 15px;
+    }
+
+    .contact-form__errore-textfield {
+        text-transform: lowercase;
+        margin-top: -3px;
+    }
+
+    .contact-form__message {
+        min-height: 300px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .popup {
+        padding-left: 0;
+        padding-right: 0;
+
+        .table-services__container {
+            width: 100%;
+        }
+    }
+}

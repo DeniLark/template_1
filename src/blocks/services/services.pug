@@ -1,0 +1,43 @@
+include mixin-services
+
+section.services-block#id-services-block.services-block--back-image.background-back-image--services
+    .our-services-block.scroll-element
+        h3.our-services__title Lorem ipsum dolor sit amet  
+        p.our-services__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, soluta! Eius excepturi laborum laboriosam voluptas veniam illum provident officiis labore dolores, autem perspiciatis ab. Unde esse ipsum animi nisi corporis:
+        ul.our-services__list
+            li
+                p Lorem
+            li
+                p ipsum
+            li
+                p dolor
+            li
+                p sit amet 
+            li
+                p consectetur adipisicing 
+            li
+                p elit
+        .our-services__button
+            button.button-simple#btn-view-services-list See full service list
+            .hidden#services-list-hidden
+                //- +viewHiddenService('Lorem', '5000')
+                //- +viewHiddenService('Ipsum', '1500')
+                //- +viewHiddenService('Dolor', '1000')
+                //- +viewHiddenService('Sit Amet', '500')
+                //- +viewHiddenService('Consectetur adipisicing', '10000')
+                //- +viewHiddenService('Elit', '2500')
+
+    .comment-block
+        .comment-block__image.img-block
+        .comments-wrapper.scroll-element
+            .comments
+                .comments__comment.swiper-container
+                    .swiper-wrapper
+                        +viewComment('Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, reiciendis quibusdam. Possimus enim veniam eos dicta atque, praesentium, et qui rem nam nisi tempora modi debitis ratione aspernatur neque nemo?', 'Autumn Luettgen')
+                        +viewComment('Provident, reiciendis quibusdam. Possimus enim veniam eos dicta atque, praesentium, et qui rem nam nisi tempora modi debitis ratione aspernatur neque nemo?', 'Tad Armstrong')
+                        +viewComment('Reiciendis quibusdam. Possimus enim veniam eos dicta atque, praesentium, et qui rem nam nisi tempora modi debitis ratione aspernatur neque nemo?', 'Ashley Willms')
+                        +viewComment('Lorem ipsum dolor.', 'Mayra Keebler')
+            .comment-block__buttons
+                button#btn-slider-comment-prev.btn-prev &lt;
+                button#btn-slider-comment-next.btn-next &gt;
+                
