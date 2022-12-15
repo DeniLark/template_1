@@ -1,5 +1,3 @@
-<a href="https://denilarks.github.io/template_1/">Перейти к сайту</a>
-
 <h3>Используется</h3>
 <ul>
   <li><a href="https://pugjs.org/api/getting-started.html">PUG</a></li>
@@ -20,4 +18,4 @@
 <p>Верстка простого макета. Использован шаблонизатор pug, препроцессор scss. Swiper для создания слайдера. Velocity-animate для анимаций реализованных на js.</p>
 <p>Приложение развернуто на GithubPages</p>
 
-<a href="https://denilarks.github.io/template_1/">Перейти к сайту</a>
+<a href="https://denilark.github.io/template_1/">Перейти к сайту</a>
